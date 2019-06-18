@@ -116,19 +116,31 @@ def cleanData():
     global endTime    
     pagePath = companyName+startTime+'-'+endTime+'.csv'
     data_two_f.to_csv(pagePath)
-    print('...数据正在保存到当前目录:'+pagePath+' 文件中!')
+    # print('...数据正在保存到当前目录:'+pagePath+' 文件中!')
     # 读取
     # d = pandas.read_csv('xx.csv')
 
-
+# 函数 函数合并
+def dataAcquisition(name,start,end):
+    global companyName
+    global startTime
+    global endTime
+    companyName = name
+    for i in range(int(start),int(end)+1):
+        startTime = str(i)
+        endTime = str(i)
+        writeInfo()
+        getData()
+    startTime = start
+    endTime = end
+    cleanData()
 
 if __name__ == "__main__":
     print('----国家自然基金项目 数据获取----')
-    companyName = input('请输入要获取数据的的学校名:')
-    startTime = input('请输入起始年份:')
-    endTime = input('请输入终止年份:')
+    name = input('请输入要获取数据的的学校名:')
+    start = input('请输入起始年份:')
+    end = input('请输入终止年份:')
     print('...数据正在获取')
-    writeInfo()
-    getData()
-    cleanData()
+    dataAcquisition(name,start,end)
+    print('...数据正在保存到当前目录:'+name+start+'-'+end+'.csv'+' 文件中!')
     print('数据获取成功!')
