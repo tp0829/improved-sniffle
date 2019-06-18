@@ -67,10 +67,11 @@ def cleanData():
     # 获取"清洗1.0"数据:去除表格的头尾,且把每页的数据保存在一起
     data_one = list()
     for i in dataAll:
+        data_oneone = list()
         for ii in i:
-            data_one.append(ii.getText())
-        data_one = data_one[36:-1]  # 去掉表头等不必要信息
-        data_one.extend(data_one)
+            data_oneone.append(ii.getText())
+        data_oneone = data_oneone[36:-1]  # 去掉表头等不必要信息
+        data_one.extend(data_oneone)
 
     # 获取"清洗2.0"数据:pandas.DataFrame存储数据
     data_one_0 = data_one[::15] # 负责人
