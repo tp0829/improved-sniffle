@@ -116,8 +116,10 @@ def cleanData():
     global endTime    
     pagePath = companyName+startTime+'-'+endTime+'.csv'
     data_two_f.to_csv(pagePath)
+    print('...数据正在保存到当前目录:'+pagePath+' 文件中!')
     # 读取
     # d = pandas.read_csv('xx.csv')
+
 
 
 if __name__ == "__main__":
@@ -125,8 +127,8 @@ if __name__ == "__main__":
     companyName = input('请输入要获取数据的的学校名:')
     startTime = input('请输入起始年份:')
     endTime = input('请输入终止年份:')
-    print('...正在获取')
+    print('...数据正在获取')
     writeInfo()
     getData()
     cleanData()
-    print('获取成功!')
+    print('数据获取成功!')
