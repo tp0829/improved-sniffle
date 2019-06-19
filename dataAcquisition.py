@@ -121,7 +121,7 @@ def cleanData():
     # d = pandas.read_csv('xx.csv')
 
 # 函数 函数合并
-def dataAcquisition(name,start,end):
+def dataAcquisition(name='安徽大学',start='2004',end='2018'):
     global companyName
     global startTime
     global endTime
