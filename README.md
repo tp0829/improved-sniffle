@@ -140,9 +140,7 @@
 			
 			![img](http://ww2.sinaimg.cn/large/006tNc79ly1g4889oinjnj31320h876p.jpg)
 			
-			---
-			
-			![img](http://ww3.sinaimg.cn/large/006tNc79ly1g4889pgug9j30v40hs0um.jpg)
+			![img](http://ww4.sinaimg.cn/large/006tNc79ly1g488jzwkifj30v40hs75g.jpg)
 			
 			输入：
 			
