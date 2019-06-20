@@ -1,14 +1,13 @@
+import requests, bs4, os
+import pandas as pd
+from pandas import DataFrame
+
 # LetPub提供数据查询,当数据超过50页时,只显示到50页
 #   :故可能需要一次查询的范围尽可能精确,然后把多次查询结果合并处理
 
 # 问题处理 
 # # (已处理)当前页面只有一页
 # # # 首页的url和第1页的不一样,第一页的和下一页的格式相同
-
-import requests, bs4, os
-import pandas as pd
-from pandas import DataFrame
-
 
 # 全局变量
 companyName = ''    # 学校
